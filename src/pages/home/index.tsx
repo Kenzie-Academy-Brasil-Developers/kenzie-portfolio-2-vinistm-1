@@ -29,7 +29,7 @@ import {
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}?tab=repositories`;
 
   return (
     <main id="home">
@@ -41,32 +41,31 @@ export const Home = (): JSX.Element => {
                 src={`https://github.com/${userData.githubUser}.png`}
                 alt={userData.nameUser}
                 title={userData.nameUser}
-                width={"48px"}
-                height={"48px"}
+                width={"70px"}
+                height={"70px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Olá, me chamo  {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+            Alguns projetos simples,{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                porém
               </Text>{" "}
-              creating and{" "}
+              feitos com muito{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+                esforço e dedicação,
               </Text>{" "}
-              projects
+              sempre procurando aprender mais e mais !
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+            aqui consta alguns projetos que realizei e algumas tecnologias utilizadas.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                Ir para os Projetos 
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                Projetos GitHub
               </Button>
               <Button
                 color="grey5"
@@ -92,12 +91,12 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
-                My projects
+                Meus projetos
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
+                Alguns dos meus projetos realizados,{" "}
                 <Text as="span" color="brand5">
-                  side projects
+                  estes são projetos para mostrar minha evolução em pelo menos um 1 ano de code !
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>
